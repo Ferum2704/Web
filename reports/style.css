@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  background-color: #23c9cf;
+  text-align: center;
+}
+
+.authors {
+  text-align: center;
+  line-height: 55px;
+  width: 100%;
+  height: 55px;
+  background-color: #179499;
+  color: #b6cecf;
+}
+
+.labsWrapper {
+  margin-top: 1%;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.laba {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 70px;
+  background-color: #659194;
+  color: #fff;
+  border-radius: 10%;
+  text-align: cen
+}
+
+.laba a {
+  color: #edf4f5;
+  text-decoration: none;
+}
+
+.labNumber {
+  text-align: center;
+  margin: 0.5%;
+}
+
+.menu {
+  width: 25%;
+  float: left;
+}
+
+.menu a {
+  display: block;
+  color: #000;
+  background-color: #3ec5cf;
+  text-decoration: none;
+  padding: 4%;
+}
+
+.menu a:hover {
+  background-color: #ccc;
+}
+
+#content {
+  width: 70%;
+  float: left;
+  height: 500px;
+  background-color: grey;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+}
+
+a.name{
+  background-color: #E60545 !important;
+}
+.clear {
+  clear:both;
+}
