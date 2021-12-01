@@ -102,19 +102,24 @@
           }
           else if ($labNumber == 7) {
             echo "<a href=\"index.php?lab=$labNumber&content=meta\">Мета</a>
-                  <a href=\"index.php?lab=$labNumber&content=pb\" class = \"name\">Робота Процишина Богдана</a>
-                  <a href=\"index.php?lab=$labNumber&content=pb_bd\" style = \"margin-left: 10%\">База даних</a>
-                  <a href=\"index.php?lab=$labNumber&content=pb_model\" style = \"margin-left: 10%\">Модель</a>
-                  <a href=\"index.php?lab=$labNumber&content=pb_search\" style = \"margin-left: 10%\">Пошук даних з бд</a>
-                  <a href=\"index.php?lab=$labNumber&content=pb_input\" style = \"margin-left: 10%\">Внесенння даних в бд</a>
-                  <a href=\"index.php?lab=$labNumber&content=pb_output\" style = \"margin-left: 10%\">Виведення даних з бд</a>
-                  <a href=\"index.php?lab=$labNumber&content=dh\" class = \"name\">Робота Хоменка Дмитра</a>
-                  <a href=\"index.php?lab=$labNumber&content=dh_bd\" style = \"margin-left: 10%\">База даних</a>
-                  <a href=\"index.php?lab=$labNumber&content=dh_model\" style = \"margin-left: 10%\">Модель</a>
-                  <a href=\"index.php?lab=$labNumber&content=dh_search\" style = \"margin-left: 10%\">Пошук даних з бд</a>
-                  <a href=\"index.php?lab=$labNumber&content=dh_input\" style = \"margin-left: 10%\">Внесенння даних в бд</a>
-                  <a href=\"index.php?lab=$labNumber&content=dh_output\" style = \"margin-left: 10%\">Виведення даних з бд</a>";
+                    <a href=\"index.php?lab=$labNumber&content=pb\" class = \"name\">Робота Процишина Богдана</a>
+                    <a href=\"index.php?lab=$labNumber&content=pb_bd\" style = \"margin-left: 10%\">База даних</a>
+                    <a href=\"index.php?lab=$labNumber&content=pb_search\" style = \"margin-left: 10%\">Пошук даних з бд</a>
+                    <a href=\"index.php?lab=$labNumber&content=pb_input\" style = \"margin-left: 10%\">Внесенння даних в бд</a>
+                    <a href=\"index.php?lab=$labNumber&content=pb_output\" style = \"margin-left: 10%\">Виведення даних з бд</a>
 
+                    <a href=\"index.php?lab=$labNumber&content=mk\" class = \"name\">Робота Штолера Максима</a>
+                    <a href=\"index.php?lab=$labNumber&content=mk_bd\" style = \"margin-left: 10%\">База даних</a>
+                    <a href=\"index.php?lab=$labNumber&content=mk_search\" style = \"margin-left: 10%\">Пошук даних з бд</a>
+                    <a href=\"index.php?lab=$labNumber&content=mk_input\" style = \"margin-left: 10%\">Внесенння даних в бд</a>
+                    <a href=\"index.php?lab=$labNumber&content=mk_output\" style = \"margin-left: 10%\">Виведення даних з бд</a>
+
+                    <a href=\"index.php?lab=$labNumber&content=dh\" class = \"name\">Робота Хоменка Дмитра</a>
+                    <a href=\"index.php?lab=$labNumber&content=dh_bd\" style = \"margin-left: 10%\">База даних</a>
+                    <a href=\"index.php?lab=$labNumber&content=dh_model\" style = \"margin-left: 10%\">Модель</a>
+                    <a href=\"index.php?lab=$labNumber&content=dh_search\" style = \"margin-left: 10%\">Пошук даних з бд</a>
+                    <a href=\"index.php?lab=$labNumber&content=dh_input\" style = \"margin-left: 10%\">Внесенння даних в бд</a>
+                    <a href=\"index.php?lab=$labNumber&content=dh_output\" style = \"margin-left: 10%\">Виведення даних з бд</a>";
           }
         ?>
 
@@ -262,11 +267,9 @@
             if($contentType == "meta") {
               echo "<img src=\"lab7/lab_meta.png\" style = \"margin-left: 15%;\" /><div class = \"clear\"></div>";
             }
+            // Bohdan
             else if($contentType == "pb_bd") {
               echo  "<img src=\"lab7/pb_1.png\" style = \"margin-left: 10%; width: 50%;\" /> <img src=\"lab7/pb_2.png\" style = \"margin-left: 2%; width: 50%;\" /> <img src=\"lab7/pb_3.png\" style = \"margin-left: 2%; width: 50%;\" /> <img src=\"lab7/pb_4.png\" style = \"margin-left: 2%; width: 50%;\" />";
-            }
-            else if($contentType == "pb_model") {
-              echo  "<img src=\"lab7/pb_model.png\" style = \"margin-left: 10%; width: 50%;\" />";
             }
             else if($contentType == "pb_input") {
               echo  "<img src=\"lab7/pb_7.png\" style = \"margin-left: 10%; width: 50%;\" /> <img src=\"lab7/pb_8.png\" style = \"margin-left: 2%; width: 50%;\" />";
@@ -277,6 +280,22 @@
             else if($contentType == "pb_search") {
               echo  "<img src=\"lab7/pb_5.png\" style = \"margin-left: 10%; width: 50%;\" /> <img src=\"lab7/pb_6.png\" style = \"margin-left: 2%; width: 50%;\" />";
             }
+            // Maksym
+            else if($contentType == "mk_bd") {
+              echo  "<img src=\"lab7/m1.png\" style = \"margin-left: 10%; width: 50%;\" /> <img src=\"lab7/m2.png\" style = \"margin-left: 2%; width: 50%;\" />";
+            }
+            else if($contentType == "mk_search") {
+              echo  "<img src=\"lab7/m3.png\" style = \"margin-left: 10%; width: 50%;\" /> <img src=\"lab7/m4.png\" style = \"margin-left: 2%; width: 80%;\" />";
+            }
+            else if($contentType == "mk_input") {
+              echo  "<img src=\"lab7/m5.png\" style = \"margin-left: 10%; width: 50%;\" /> <img src=\"lab7/m6.png\" style = \"margin-left: 2%; width: 50%;\" />
+              <img src=\"lab7/m7.png\" style = \"margin-left: 2%; width: 50%;\" /><img src=\"lab7/m8.png\" style = \"margin-left: 2%; width: 50%;\" />";
+            }
+            else if($contentType == "mk_output") {
+              echo  "<img src=\"lab7/m9.png\" style = \"margin-left: 10%; width: 50%;\" /> <img src=\"lab7/m10.png\" style = \"margin-left: 2%; width: 50%;\" />
+              <img src=\"lab7/m11.png\" style = \"margin-left: 2%; width: 50%;\" />";
+            }
+
             else if($contentType == "dh_bd") {
               echo  "<img src=\"lab7/dh_bd1.png\" style = \"margin-left: 10%; width: 100%;\" /> <img src=\"lab7/dh_bd2.png\" style = \"margin-left: 2%; width: 100%;\" /> <img src=\"lab7/dh_bd3.png\" style = \"margin-left: 2%; width: 100%;\" /> <img src=\"lab7/dh_bd4.png\" style = \"margin-left: 2%; width: 100%;\" />";
             }
