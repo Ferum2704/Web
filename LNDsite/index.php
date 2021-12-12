@@ -25,13 +25,20 @@
           <a href="#">Про нас</a>
         </div>
         <div id="login">
-          <a href="#">Увійти</a>
-          <a href="#">Зареєструватися</a>
+          <?php if(!isset($_COOKIE['user'])): ?>
+            <a href="./login">Увійти</a>
+            <a href="./register">Зареєструватися</a>
+
+          <?php else: ?>
+            <a href = "#" style="color: #000;"><?=  $_COOKIE['user'] ?></a>
+            <a href="./logout">Вийти</a>
+
+          <?php endif ?>
         </div>
       </header>
    </div>
 
-    <div id="firstImage">        
+    <div id="firstImage">
         <div id="arc-wrapper" class="arc-wrapper">
           <h3>Luxembourg National Division</h3>
         </div>
@@ -95,11 +102,11 @@
     </script>
 
     <script type="text/javascript">
-    
+
       var $word1    = $('#arc-wrapper').find('h3').hide();
-      
+
       google.load('webfont','1');
-      
+
       google.setOnLoadCallback(function() {
         WebFont.load({
           google    : {
@@ -113,11 +120,11 @@
           }
         });
       });
-      
+
       function init() {
-      
+
         $word1.show().arctext({radius: 150});
-      
+
       };
     </script>
 
@@ -135,7 +142,7 @@
      $("#progressbar").progressbar({value: 0});
 
      // Initialize complexify
-     $("#password").complexify({}, 
+     $("#password").complexify({},
       function (valid, complexity) { //show de password level
        // Show percentage
        $('#per').text(Math.round(complexity));
