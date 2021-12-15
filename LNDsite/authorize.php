@@ -7,7 +7,7 @@
 
   $password = md5($password . $signingKey);
 
-  $mysql = new mysqli('127.0.0.1', 'lab7user', 'lab7password', "website");
+  $mysql = new mysqli('127.0.0.1', 'root', 'Batuishka123', "football");
   $response = $mysql->query("SELECT * FROM `users` WHERE `login` = '$login'
      AND `password` = '$password'");
   $user = $response->fetch_assoc();
@@ -17,8 +17,11 @@
   }
 
   setcookie('user', $user['name'], time() + 3600, "/");
+  session_start();
+  $_SESSION["name"] = $user['name'];
+  $_SESSION["login"] = $user['login'];
 
   $mysql->close();
 
-  header("Location: ../");
+  header("Location: index.php");
 ?>

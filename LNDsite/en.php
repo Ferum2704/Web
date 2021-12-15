@@ -71,6 +71,7 @@
    'news7' => '"Wiltz 91" won the first match from the begining of the season',
    'news8' => 'More',
    'read-more' => 'Read more...',
+   'login' => 'Login',
    'sign-up1' => 'Create your new account',
    'sign-up2' => 'Repeat password',
    'sign-up3' => 'Sign up'

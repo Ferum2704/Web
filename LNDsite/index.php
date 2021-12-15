@@ -11,7 +11,14 @@
   </head>
   <body>
     <?php include('nav.php');?>
-
+    <?php
+      if(isset($_GET['lang'])){
+          echo "<script type=\"text/javascript\">
+            window.onload = function(){
+            alert(\"Вибрана мова:" . $_GET['lang'] . "\")};
+          </script>";
+      }
+    ?>
     <div id="firstImage">
     </div>
    <?php include('footer.php')?>

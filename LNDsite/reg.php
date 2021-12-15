@@ -1,4 +1,5 @@
 <?php
+  session_start();
 
   $login = filter_var(trim($_POST["login"]), FILTER_SANITIZE_STRING);
   $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
@@ -8,7 +9,7 @@
                                                         jw7qhLmx9DbdsMxXONEuchZouUbhWt";
 
   // Check if the sent form data is valid
-  if (mb_strlen($login) < 5 || mb_strlen($login) > 90) {
+  if (mb_strlen($login) < 3 || mb_strlen($login) > 90) {
     echo "Wrong login length!";
     exit();
   }
@@ -27,7 +28,7 @@
 
   $password = md5($password . $signingKey);
 
-  $mysql = new mysqli('127.0.0.1', 'lab7user', 'lab7password', "website");
+  $mysql = new mysqli('127.0.0.1', 'root', 'Batuishka123', "football");
 
   // Check if user with such login already exists
   $response = $mysql->query("SELECT * FROM `users` WHERE `login` = '$login'");
@@ -42,6 +43,7 @@
   $mysql->close();
 
   setcookie('user', $name, time() + 3600, "/");
+  $_SESSION["name"] = $name;
 
-  header("Location: ../");
+  header("Location: index.php");
 ?>
