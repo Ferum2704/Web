@@ -1,4 +1,5 @@
 <?php
+  session_start();
   include('chooselang.php');
 ?>
 
@@ -75,7 +76,7 @@
     </article>
     <div class="moreNews" ><a href="#"><?php echo $_LANG['news8']; ?></a></div>
 </section>
-    
+
 </div>
     <?php include('footer.php')?>
 </body>

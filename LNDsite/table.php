@@ -1,4 +1,5 @@
 <?php
+  session_start();
   $sortType = null;
   if(isset($_GET["sort"]) && is_string($_GET["sort"])) {
     $sortType = $_GET["sort"];
@@ -89,31 +90,31 @@
                     mysqli_close($conn1);
                 }
                 if ($sortType == "wins") {
-                    $conn = mysqli_connect("localhost", "root", "Batuishka123", "football");
+                    $conn = mysqli_connect("localhost", "lab7user", "lab7password", "website");
                     connect($conn);
                     $sql = "SELECT * FROM `team` ORDER BY Wins DESC";
-                    sql_op($sql, $conn);                      
+                    sql_op($sql, $conn);
                 }
                 else if ($sortType == "draws") {
-                    $conn = mysqli_connect("localhost", "root", "Batuishka123", "football");
+                    $conn = mysqli_connect("localhost", "lab7user", "lab7password", "website");
                     connect($conn);
                     $sql = "SELECT * FROM `team` ORDER BY Draws DESC";
-                    sql_op($sql, $conn);                    
+                    sql_op($sql, $conn);
                 }
                 else if ($sortType == "loses") {
-                    $conn = mysqli_connect("localhost", "root", "Batuishka123", "football");
+                    $conn = mysqli_connect("localhost", "lab7user", "lab7password", "website");
                     connect($conn);
                     $sql = "SELECT * FROM `team` ORDER BY Loses DESC";
-                    sql_op($sql, $conn);                   
+                    sql_op($sql, $conn);
                 }
                 else if ($sortType == "points") {
-                    $conn = mysqli_connect("localhost", "root", "Batuishka123", "football");
+                    $conn = mysqli_connect("localhost", "lab7user", "lab7password", "website");
                     connect($conn);
                     $sql = "SELECT * FROM `team`ORDER BY TeamId";
                     sql_op($sql, $conn);
                 }
                 else{
-                    $conn = mysqli_connect("localhost", "root", "Batuishka123", "football");
+                    $conn = mysqli_connect("localhost", "lab7user", "lab7password", "website");
                     connect($conn);
                     $sql = "SELECT * FROM `team`";
                     sql_op($sql, $conn);

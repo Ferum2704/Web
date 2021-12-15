@@ -1,4 +1,5 @@
 <?php
+  session_start();
   $contentType = null;
   if(isset($_GET["content"]) && is_string($_GET["content"])) {
     $contentType = $_GET["content"];
