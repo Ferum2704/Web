@@ -1,27 +1,25 @@
 <style>
-  li{
-    list-style-type: none;
-    display: inline;
-
-  }
 .language{
   width: 40px; height: 30px;
   
 }
-ul{
+.footer-list li{
+    list-style-type: none;
+    display: inline;
+}
+ul.footer-list{
   padding-right: 20px;
   text-align: right;
-
 }
 
 </style>
 <footer>
       Brigada8, IS-03 production &copy 2021
       
-      <ul >
-        <li class="footer-item-lang-en" > <a href="index.php"><img class="language" src="flags/gbflag.png" alt="en"></a> </li>
-        <li class="footer-item-lang-ua"><a href="ua/index.php"><img class="language" src="flags/uaflag.svg" alt="ua"></a></li>
-        <li class="footer-item-lang-ru"> <a href="ru/index.php"><img class="language" src="flags/ruflag.png" alt="ru"></a> </li>
+      <ul class="footer-list">
+        <li class="footer-item-lang-en" > <a href="index.php?lang=en"><img class="language" src="flags/gbflag.png" alt="en"></a> </li>
+        <li class="footer-item-lang-ua"><a href="index.php?lang=ua"><img class="language" src="flags/uaflag.svg" alt="ua"></a></li>
+        <li class="footer-item-lang-ru"> <a href="index.php?lang=ru"><img class="language" src="flags/ruflag.png" alt="ru"></a> </li>
       </ul>
     </footer>
 
@@ -47,9 +45,13 @@ ul{
         window.scrollTo(0, 0);
       }
     </script>
-
-    <script type="text/javascript">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     
+    <script type="text/javascript">
       var $word1    = $('#arc-wrapper').find('h3').hide();
       
       google.load('webfont','1');

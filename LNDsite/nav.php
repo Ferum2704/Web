@@ -1,7 +1,7 @@
-<style>
-</style>
+<?php include('chooselang.php')?>
+
 <div id = "generalHeader">
-      <div id="mobileLogo">Luxembourg National Division</div>
+      <div id="mobileLogo"><?php $_LANG['moblnd_nav'] ?></div>
       <header>
         <div id="logo">
           <a style="text-decoration: none;" href="index.php" >
@@ -9,10 +9,10 @@
           </a>
         </div>
         <div id="menu">
-          <a href="news.php">News</a>
-          <a href="#">Teams</a>
-          <a href="#">Tournament table</a>
-          <a href="about-us.php">About us</a>
+          <a href="news.php"><?php echo $_LANG['news_nav']; ?></a>
+          <a href="teams.php"><?php echo $_LANG['teams_nav']; ?></a>
+          <a href="table.php"><?php echo $_LANG['table_nav']; ?></a>
+          <a href="about-us.php"><?php echo $_LANG['about_nav']; ?></a>
         </div>
         <div id="login">
           <?php if(!isset($_SESSION['name'])): ?>

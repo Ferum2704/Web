@@ -25,13 +25,13 @@
     <?php include('nav.php');?>
 <div id="formLoginDiv" style="padding-top: 200px; padding-bottom: 500px;">
       <form action="authorize.php" id="formLogin" method="post">
-        <h3 style="color: white;">Sign in</h3>
-        <label for="name">Login</label><br>
+        <h3 style="color: white;"><?php echo $_LANG['signin_nav']; ?></h3>
+        <label for="name"><?php echo $_LANG['username']; ?></label><br>
         <input type="text" placeholder="Enter username" name = "login" id = "name"><br>
-        <label for="password">Password</label><br>
+        <label for="password"><?php echo $_LANG['password']; ?></label><br>
         <input type="password" placeholder="Enter password" name = "password" id = "password"><br> <br>
         <button type="submit" name = "done" style="color: white; background: red;">Sign in</button>
-        <br><br><a href="sign-up.php">Don't have an account yet? Sign Up!</a>
+        <br><br><a href="sign-up.php"><?php echo $_LANG['in_to_up']; ?></a>
       </form>
     </div>
     <?php include('footer.php');?>

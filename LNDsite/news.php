@@ -1,3 +1,8 @@
+<?php
+  include('chooselang.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,21 +59,21 @@
 <body>
     <?php include('nav.php') ?>
 <div class="main">
-    <section><h1>NEWS</h1>
+    <section><h1><?php echo $_LANG['news1']; ?></h1>
     <article>
-        <h2>Progres outclassed by Dudelange</h2>
-        <p>After long period of time without wins Dudelange outclassed the leader of the season. </p> <a href="#">Read more... </a>
+        <h2><?php echo $_LANG['news2']; ?></h2>
+        <p><?php echo $_LANG['news3']; ?></p> <a href="#">Read more... </a>
     </article>
     <article>
-        <h2>Sad times</h2> <p>All luxembouirgish clubs end up playing in European tournaments</p> <a href="#">Read more... </a>
+        <h2><?php echo $_LANG['news4']; ?></h2> <p><?php echo $_LANG['news5']; ?></p> <a href="#"><?php echo $_LANG['read-more']; ?></a>
     </article>
     <article>
-        <h2>Historical achievement for Luxembourg national team</h2> <p></p> <a href="#">Read more... </a>
+        <h2><?php echo $_LANG['news6']; ?></h2> <p></p> <a href="#"><?php echo $_LANG['read-more']; ?></a>
     </article>
     <article>
-    <h2>"Wiltz 91" won the first match from the begining of the season</h2> <p></p> <a href="#">Read more... </a>
+    <h2><?php echo $_LANG['news7']; ?></h2> <p></p> <a href="#"><?php echo $_LANG['read-more']; ?></a>
     </article>
-    <div class="moreNews" ><a href="#">More</a></div>
+    <div class="moreNews" ><a href="#"><?php echo $_LANG['news8']; ?></a></div>
 </section>
     
 </div>
